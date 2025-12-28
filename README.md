@@ -19,3 +19,26 @@ This project provides RESTful APIs to register and manage students and is suitab
 
 ## 🏗️ Project Structure
 
+
+  backend/
+  │
+  ├── app.py # Project entry point (like manage.py)
+  ├── requirements.txt # Python dependencies
+  │
+  ├── config/ # Django project configuration
+  │ ├── init.py
+  │ ├── settings.py # Project settings
+  │ ├── urls.py # Main URL routing
+  │ └── wsgi.py # WSGI entry for deployment
+  │
+  ├── models/ # Database models
+  │ ├── init.py
+  │ └── student.py
+  │
+  ├── controllers/ # API logic (views)
+  │ ├── init.py
+  │ └── student_controller.py
+  │
+  ├── routes/ # API routes
+  │ ├── init.py
+  │ └── student_routes.py
