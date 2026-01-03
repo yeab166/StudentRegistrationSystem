@@ -27,23 +27,33 @@ It is designed to be consumed by frontend frameworks such as **React**, **Vue**,
 git clone https://github.com/yeab166/StudentRegistrationSystem.git
 cd school-api-drf
 
+```
+
 ```bash
 python -m venv venv
 venv\Scripts\activate   # For Windows
 
+```
+
 ```bash
 pip install -r requirements.txt
+
+```
 
 
 ```bash
 SECRET_KEY=your-secret-key-here
 DEBUG=True
 
+```
 
 ```bash
 python manage.py makemigrations
 python manage.py migrate
 
+```
+
 
 ```bsh
 python manage.py runserver
+
