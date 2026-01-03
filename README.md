@@ -1,42 +1,58 @@
 # 🎓 Student Registration System (Django REST API)
 
-A backend-only **Student Registration System** built using **Django** and **Django REST Framework**, following a clean and modular architecture inspired by modern backend design.
+A backend-only **Student Registration System** built using **Django** and **Django REST Framework (DRF)**.  
+This project exposes RESTful APIs to manage **Students**, **Courses**, and **Enrollments**.
 
-This project provides RESTful APIs to register and manage students and is suitable for integration with frontend frameworks like **React**, **Vue**, **Flutter**, or **mobile apps**.
+It is designed to be consumed by frontend frameworks such as **React**, **Vue**, **Angular**, **Flutter**, or mobile applications.
 
 ---
 
 ## 🚀 Features
 
-- Student registration (Create)
-- Fetch all students (Read)
-- Clean MVC-style folder structure
-- Django REST Framework based API
-- SQLite database (easy to switch to PostgreSQL/MySQL)
-- Ready for production deployment (WSGI enabled)
+- Create, read, update, and delete students
+- Manage courses with different levels
+- Enroll students into courses
+- Django Admin panel support
+- RESTful API using Django REST Framework
+- SQLite database (easy to replace with PostgreSQL/MySQL)
+- Ready for Postman testing
 
 ---
 
-## 🏗️ Project Structure
 
+## ⚙️ Installation & Setup
 
-- backend/
-  
-  -app.py
-  -requirements.txt
-  -config/ 
-    -init.py
-    -settings.py
-    -urls.py
-    -wsgi.py
-  -models/ 
-    -init.py
-    -student.py
-  -controllers/
-    -init.py
-    -student_controller.py
-  -routes/
-    -init.py
-    -student_routes.py
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/yeab166/StudentRegistrationSystem.git
+cd school-api-drf
 
 ---
+
+```
+python -m venv venv
+venv\Scripts\activate   # For Windows
+
+```
+
+```
+pip install -r requirements.txt
+
+```
+
+```
+SECRET_KEY=your-secret-key-here
+DEBUG=True
+
+```
+
+```
+python manage.py makemigrations
+python manage.py migrate
+
+```
+
+```
+python manage.py runserver
+
+```
